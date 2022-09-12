@@ -1,0 +1,64 @@
+<script language="javascript">
+    //belajar variabel dan tipe data
+    var nama_lengkap = "Ridwan";
+    var jabatan = 'Manager';
+    let status = "Menikah";
+    if(jabatan == 'Manager'){
+        gapok = 15000000; 
+    } 
+    else if(jabatan == 'Asisten Manager'){
+        gapok = 10000000; 
+    } 
+    else if(jabatan == 'Staff'){
+        gapok = 5000000; 
+    }
+    else{
+        gapok = 0; 
+    }
+
+    let tunbat = 15 * gapok / 100;
+    let bpjs = 10 * gapok / 100;
+    let tukel = (status == "Menikah") ? 0.2 * gapok : 0;
+    let toga = gapok + tunbat + bpjs + tukel;
+    //cetak
+    document.write("<h3 align='center'>Tugas 1 JavaScript</h3>");
+    document.write("<h5 align='center'>Muhammad Fahri Putra Pratama_UM_Henry</h3>");
+    document.write("<hr/>");
+    document.write("<br/>Nama Pegawai: " + nama_lengkap );
+    document.write("<br/>Jabatan: " + jabatan );
+    document.write("<br/>Status: " + status );
+    document.write("<br/>");
+    document.write("<br/>");
+    document.write("<table align='left' border='1' cellpadding='2' cellspacing='1' width='30%'>")
+        document.write("<thead>");
+            document.write("<tr bgcolor='cyan'>");
+                document.write("<th> Data </th>");
+                document.write("<th> Keterangan </th>");
+            document.write("</tr>");
+        document.write("</thead>");
+        document.write("<tbody bgcolor='yellow'>");
+            document.write("<tr>");
+                document.write("<td>Gaji Pokok"+"</td>");
+                document.write("<td>Rp. "+ gapok + "</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td>Tunjangan Jabatan"+"</td>");
+                document.write("<td>Rp. "+ tunbat + "</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td>BPJS"+"</td>");
+                document.write("<td>Rp. "+ bpjs + "</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td>Tunjangan Keluarga"+"</td>");
+                document.write("<td>Rp. "+ tukel + "</td>");
+            document.write("</tr>");
+        document.write("<t/body>");
+        document.write("<tfoot bgcolor='green' align='left'>");
+            document.write("<tr>");
+                document.write("<th>Total Gaji"+"</th>");
+                document.write("<th>Rp. "+ toga +"</th>");
+            document.write("</tr>");
+        document.write("</tfoot>");
+    document.write("</table>");
+    </script>
