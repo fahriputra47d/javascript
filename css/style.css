@@ -1,0 +1,10 @@
+.body{
+    background-color: rgb(71, 133, 133);
+}
+
+.judul{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(51, 87, 110);
+    font-family: 'Times New Roman', Times, serif;
+}
